@@ -435,7 +435,7 @@
       margin-top: 1rem;
       display: none;
       text-align: center;
-      max-width: 350px;
+      max-width: 380px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -448,6 +448,15 @@
     .contact-info-portfolio p {
       margin: 8px 0;
       font-size: 0.85rem;
+    }
+    
+    /* PDF Button */
+    .pdf-btn {
+      background: linear-gradient(135deg, #dc2626, #991b1b);
+      margin-top: 5px;
+    }
+    .pdf-btn:hover {
+      transform: scale(1.02);
     }
     
     /* Back to Home Button */
@@ -532,21 +541,21 @@
         <h2>GIS Maps | Ramani za Jiografia</h2>
       </div>
       <div class="maps-grid">
-        <!-- Population Density PNG -->
+        <!-- Indeces Map (mwanzoni) -->
+        <div class="map-card" onclick="openModal('indeces.jpeg', 'Indices Map - GIS Analysis')">
+          <div class="map-image"><img src="indeces.jpeg" alt="Indices Map"></div>
+          <div class="map-details">
+            <h3>Indices Map</h3>
+            <p>GIS indices and spatial analysis results showing various geographical indices.</p>
+            <div class="map-meta"><span class="map-type">🗺️ GIS - Indices Analysis</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
+          </div>
+        </div>
+        <!-- Population Density PNG (only PNG, removed JPG) -->
         <div class="map-card" onclick="openModal('population density.png', 'Population Density Map - Ubungo District')">
           <div class="map-image"><img src="population%20density.png" alt="Population Density Map"></div>
           <div class="map-details">
-            <h3>Population Density Map (PNG)</h3>
+            <h3>Population Density Map</h3>
             <p>Choropleth map showing persons per km² across wards of Ubungo District.</p>
-            <div class="map-meta"><span class="map-type">🗺️ GIS - Demographics</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
-          </div>
-        </div>
-        <!-- Population Density JPG -->
-        <div class="map-card" onclick="openModal('population density.jpg', 'Population Density Map - Ubungo District')">
-          <div class="map-image"><img src="population%20density.jpg" alt="Population Density Map JPG"></div>
-          <div class="map-details">
-            <h3>Population Density Map (JPG)</h3>
-            <p>Population distribution and density analysis across Ubungo District.</p>
             <div class="map-meta"><span class="map-type">🗺️ GIS - Demographics</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
@@ -748,7 +757,8 @@
         <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/255688163923" target="_blank">+255 688 163 923</a></p>
         <p>🌐 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/taisoni-mwaluswaswa-6524b1356" target="_blank">linkedin.com/in/taisoni-mwaluswaswa</a></p>
         <p>📍 <strong>Address:</strong> Dar es Salaam, Tanzania</p>
-        <p>🌍 <strong>Portfolio:</strong> <a href="https://taisoni-mwaluswaswa.github.io" target="_blank">taisoni-mwaluswaswa.github.io</a></p>
+        <p>🌍 <strong>Portfolio:</strong> <a href="https://taisonimwaluswaswa.github.io/Portfolio/" target="_blank">taisonimwaluswaswa.github.io/Portfolio/</a></p>
+        <p>📄 <strong>Portfolio PDF:</strong> <a href="portfolio.pdf" target="_blank">Download Portfolio PDF</a></p>
       </div>
     </div>
 
