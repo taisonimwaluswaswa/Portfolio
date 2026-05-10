@@ -121,11 +121,11 @@
       margin-top: 0.6rem;
     }
 
-    /* PORTFOLIO PAGE - ipo chini ya welcome page */
+    /* PORTFOLIO PAGE */
     .portfolio-page {
       background: linear-gradient(135deg, #f0f9ff 0%, #e6f0f5 100%);
       width: 100%;
-      padding: 2rem 1.5rem;
+      padding: 2rem 1rem;
     }
     .container {
       max-width: 1400px;
@@ -171,6 +171,7 @@
       border-bottom: 3px solid #e2e8f0;
       padding-bottom: 0.8rem;
       margin-bottom: 1.5rem;
+      flex-wrap: wrap;
     }
     .category-header h2 { font-size: 1.6rem; font-weight: 700; }
     .category-icon { font-size: 2rem; }
@@ -188,21 +189,21 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     .skill-card h3, .tools-card h3 {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin-bottom: 0.8rem;
     }
     .skill-list, .tools-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.6rem;
+      gap: 0.5rem;
       margin-top: 0.5rem;
       list-style: none;
     }
     .skill-list li, .tools-list span {
       background: #eff3f8;
-      padding: 0.3rem 1rem;
+      padding: 0.25rem 0.8rem;
       border-radius: 40px;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 500;
     }
 
@@ -221,6 +222,7 @@
       border-bottom: 3px solid #e2e8f0;
       padding-bottom: 0.8rem;
       margin-bottom: 1.5rem;
+      flex-wrap: wrap;
     }
     .maps-header h2 {
       font-size: 1.6rem;
@@ -229,8 +231,8 @@
     }
     .maps-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 1.8rem;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
     }
     .map-card {
       background: #ffffff;
@@ -246,12 +248,12 @@
     }
     .map-image {
       width: 100%;
-      height: 220px;
+      height: 200px;
       background: #cbdde6;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 3rem;
+      font-size: 2.5rem;
       position: relative;
       overflow: hidden;
     }
@@ -262,41 +264,41 @@
       background: #f5f5f5;
     }
     .map-details {
-      padding: 1rem;
+      padding: 0.8rem;
     }
     .map-details h3 {
-      font-size: 1rem;
+      font-size: 0.95rem;
       margin-bottom: 0.3rem;
       color: #1f4e3c;
     }
     .map-details p {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: #5a6e7c;
-      margin-bottom: 0.5rem;
-      line-height: 1.4;
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
     }
     .map-meta {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 0.5rem;
+      margin-top: 0.4rem;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 0.3rem;
     }
     .map-type {
       background: #2c7a5e20;
-      padding: 0.2rem 0.6rem;
+      padding: 0.2rem 0.5rem;
       border-radius: 20px;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 600;
       color: #2c7a5e;
     }
     .zoom-hint {
-      font-size: 0.65rem;
+      font-size: 0.6rem;
       color: #888;
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
     }
 
     /* MODAL ZOOM STYLES */
@@ -323,8 +325,8 @@
       align-items: center;
     }
     .modal-img-container {
-      width: 90%;
-      height: 85%;
+      width: 95%;
+      height: 80%;
       overflow: hidden;
       display: flex;
       justify-content: center;
@@ -355,10 +357,10 @@
     .zoom-controls button {
       background: white;
       border: none;
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: bold;
       cursor: pointer;
       transition: all 0.2s;
@@ -369,16 +371,16 @@
     }
     .close-modal {
       position: fixed;
-      top: 20px;
-      right: 30px;
+      top: 15px;
+      right: 20px;
       color: white;
-      font-size: 40px;
+      font-size: 35px;
       font-weight: bold;
       cursor: pointer;
       z-index: 2001;
       background: rgba(0,0,0,0.5);
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -390,13 +392,13 @@
     }
     .modal-title {
       position: fixed;
-      top: 20px;
-      left: 20px;
+      top: 15px;
+      left: 15px;
       color: white;
       background: rgba(0,0,0,0.6);
-      padding: 8px 16px;
-      border-radius: 30px;
-      font-size: 0.9rem;
+      padding: 6px 12px;
+      border-radius: 25px;
+      font-size: 0.8rem;
       z-index: 2001;
     }
     .zoom-level {
@@ -405,9 +407,9 @@
       left: 20px;
       color: white;
       background: rgba(0,0,0,0.6);
-      padding: 5px 12px;
+      padding: 4px 10px;
       border-radius: 20px;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       z-index: 2001;
     }
 
@@ -433,7 +435,7 @@
       margin-top: 1rem;
       display: none;
       text-align: center;
-      max-width: 380px;
+      max-width: 350px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -457,7 +459,7 @@
       background: linear-gradient(135deg, #1f4e3c, #2c7a5e);
       color: white;
       border: none;
-      padding: 0.7rem 1.8rem;
+      padding: 0.6rem 1.5rem;
       border-radius: 40px;
       cursor: pointer;
       font-size: 0.9rem;
@@ -474,22 +476,26 @@
       color: #2c5a4a;
       border-top: 1px solid #cbdde6;
       margin-top: 1rem;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
 
     @media (max-width: 768px) {
-      .top-title h1 { font-size: 1rem; }
-      .welcome-content-bottom .tagline { font-size: 0.95rem; }
+      .top-title h1 { font-size: 0.9rem; }
+      .welcome-content-bottom .tagline { font-size: 0.9rem; }
       .image-top img { margin-top: -30px; margin-bottom: -20px; }
       .image-top { max-height: 40vh; min-height: 28vh; }
       .welcome-content-bottom { padding: 0.5rem 1rem 1rem 1rem; margin-top: -5px; }
-      .category-header h2 { font-size: 1.3rem; }
-      .hero h2 { font-size: 1.4rem; }
-      .maps-header h2 { font-size: 1.3rem; }
-      .maps-grid { grid-template-columns: 1fr; }
-      .modal-img-container { width: 95%; height: 80%; }
-      .zoom-controls button { width: 35px; height: 35px; font-size: 1.2rem; }
-      .contact-info-portfolio { max-width: 95%; }
+      .welcome-content-bottom p { font-size: 0.75rem; }
+      .category-header h2 { font-size: 1.2rem; }
+      .hero h2 { font-size: 1.3rem; }
+      .maps-header h2 { font-size: 1.2rem; }
+      .maps-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .map-image { height: 180px; }
+      .map-details h3 { font-size: 0.9rem; }
+      .modal-img-container { width: 95%; height: 75%; }
+      .zoom-controls button { width: 35px; height: 35px; font-size: 1.1rem; }
+      .close-modal { width: 40px; height: 40px; font-size: 30px; top: 10px; right: 15px; }
+      .modal-title { font-size: 0.7rem; top: 10px; left: 10px; }
     }
   </style>
 </head>
@@ -507,7 +513,7 @@
     <div class="tagline">I'm Taisoni Ambokile Mwaluswaswa</div>
     <p><strong>Geographical Information System and Remote Sensing expert passionate about transforming spatial data into meaningful insights and real-world solutions. Here, you'll discover my work, projects, and innovations in mapping, spatial analysis, and geospatial technology. Turning data into decisions, and ideas into impactful solutions.</strong></p>
     <button class="voice-trigger-btn" onclick="speakWelcomeMessage()">🔊 Sauti / Welcome Voice</button>
-    <p style="font-size:0.65rem; margin-top:0.6rem; color:#cccccc;">Bonyeza "Sauti" kusikiliza ujumbe wa kukaribisha</p>
+    <p style="font-size:0.6rem; margin-top:0.5rem; color:#cccccc;">Bonyeza "Sauti" kusikiliza ujumbe wa kukaribisha</p>
   </div>
 </div>
 
@@ -526,78 +532,58 @@
         <h2>GIS Maps | Ramani za Jiografia</h2>
       </div>
       <div class="maps-grid">
-        <!-- INDECES MAP - NEW FIRST IMAGE -->
-        <div class="map-card" onclick="openModal('indeces.jpeg', 'Indices Map - GIS Analysis')">
-          <div class="map-image"><img src="indeces.jpeg" alt="Indices Map"></div>
+        <!-- Population Density PNG -->
+        <div class="map-card" onclick="openModal('population density.png', 'Population Density Map - Ubungo District')">
+          <div class="map-image"><img src="population%20density.png" alt="Population Density Map"></div>
           <div class="map-details">
-            <h3>Indices Map</h3>
-            <p>GIS indices and spatial analysis results showing various geographical indices.</p>
-            <div class="map-meta"><span class="map-type">🗺️ GIS - Indices Analysis</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
-          </div>
-        </div>
-        <div class="map-card" onclick="openModal('Population%20Distribution%20Map.jpg', 'Population Distribution Map - Ubungo District')">
-          <div class="map-image"><img src="Population%20Distribution%20Map.jpg" alt="Population Distribution Map"></div>
-          <div class="map-details">
-            <h3>Population Distribution Map</h3>
-            <p>Ward-level population distribution in Ubungo District using graduated proportional circles.</p>
-            <div class="map-meta"><span class="map-type">🗺️ GIS - Demographics</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
-          </div>
-        </div>
-        <div class="map-card" onclick="openModal('Population%20Density%20Map.jpg', 'Population Density Map - Ubungo District')">
-          <div class="map-image"><img src="Population%20Density%20Map.jpg" alt="Population Density Map"></div>
-          <div class="map-details">
-            <h3>Population Density Map</h3>
+            <h3>Population Density Map (PNG)</h3>
             <p>Choropleth map showing persons per km² across wards of Ubungo District.</p>
             <div class="map-meta"><span class="map-type">🗺️ GIS - Demographics</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('Change%20Detection%20Maps.jpg', 'Change Detection 2014 → 2019 - Ubungo District')">
-          <div class="map-image"><img src="Change%20Detection%20Maps.jpg" alt="Change Detection Map"></div>
+        <!-- Population Density JPG -->
+        <div class="map-card" onclick="openModal('population density.jpg', 'Population Density Map - Ubungo District')">
+          <div class="map-image"><img src="population%20density.jpg" alt="Population Density Map JPG"></div>
           <div class="map-details">
-            <h3>Change Detection 2014 → 2019</h3>
-            <p>Land cover transitions showing conversion from Bare Land/Vegetation to Built-up.</p>
-            <div class="map-meta"><span class="map-type">🗺️ GIS - Change Detection</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
+            <h3>Population Density Map (JPG)</h3>
+            <p>Population distribution and density analysis across Ubungo District.</p>
+            <div class="map-meta"><span class="map-type">🗺️ GIS - Demographics</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('Transportation%20Network%20Map.png', 'Transportation Network Map - Ubungo District')">
-          <div class="map-image"><img src="Transportation%20Network%20Map.png" alt="Transportation Network Map"></div>
+        <!-- Schools Facility Map -->
+        <div class="map-card" onclick="openModal('schools_facility.png', 'Schools Facility Distribution Map - Ubungo District')">
+          <div class="map-image"><img src="schools_facility.png" alt="Schools Facility Map"></div>
           <div class="map-details">
-            <h3>Transportation Network Map</h3>
-            <p>Road hierarchy, railway, and bus stops in Ubungo District.</p>
-            <div class="map-meta"><span class="map-type">🗺️ GIS - Infrastructure</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
+            <h3>Schools Facility Distribution Map</h3>
+            <p>Public primary and secondary schools distribution across Ubungo District.</p>
+            <div class="map-meta"><span class="map-type">🗺️ GIS - Social Services</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('Health%20Centers%20Distribution%20Map.png', 'Health Centers Distribution Map - Ubungo District')">
-          <div class="map-image"><img src="Health%20Centers%20Distribution%20Map.png" alt="Health Centers Distribution Map"></div>
+        <!-- Health Facility Map -->
+        <div class="map-card" onclick="openModal('health_facility.png', 'Health Facilities Distribution Map - Ubungo District')">
+          <div class="map-image"><img src="health_facility.png" alt="Health Facilities Map"></div>
           <div class="map-details">
-            <h3>Health Centers Distribution Map</h3>
+            <h3>Health Facilities Distribution Map</h3>
             <p>Hospitals, dispensaries, clinics, and pharmacies across Ubungo District.</p>
             <div class="map-meta"><span class="map-type">🗺️ GIS - Social Services</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('Police%20Stations%20Distribution%20Map.png', 'Police Stations Distribution Map - Ubungo District')">
-          <div class="map-image"><img src="Police%20Stations%20Distribution%20Map.png" alt="Police Stations Distribution Map"></div>
+        <!-- Classification Map -->
+        <div class="map-card" onclick="openModal('classification.jpg', 'Land Cover Classification Map - Ubungo District')">
+          <div class="map-image"><img src="classification.jpg" alt="Land Cover Classification"></div>
           <div class="map-details">
-            <h3>Police Stations Distribution Map</h3>
-            <p>Police stations across Ubungo District overlaid on road network.</p>
-            <div class="map-meta"><span class="map-type">🗺️ GIS - Security</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
+            <h3>Land Cover Classification Map</h3>
+            <p>Supervised classification showing Built-up, Bare Land, Vegetation, and Water.</p>
+            <div class="map-meta"><span class="map-type">🗺️ GIS - Land Cover</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('Primary%20Schools%20Distribution%20Map.png', 'Primary Schools Distribution Map - Ubungo District')">
-          <div class="map-image"><img src="Primary%20Schools%20Distribution%20Map.png" alt="Primary Schools Distribution Map"></div>
+        <!-- Classification 1 -->
+        <div class="map-card" onclick="openModal('classification1.jpg', 'Land Cover Classification Map 2 - Ubungo District')">
+          <div class="map-image"><img src="classification1.jpg" alt="Land Cover Classification 2"></div>
           <div class="map-details">
-            <h3>Primary Schools Distribution Map</h3>
-            <p>Public primary schools across Ubungo District.</p>
-            <div class="map-meta"><span class="map-type">🗺️ GIS - Social Services</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
-          </div>
-        </div>
-        <!-- Ardhi University Map -->
-        <div class="map-card" onclick="openModal('ardhi_university_map.png', 'Ardhi University Campus Map')">
-          <div class="map-image"><img src="ardhi_university_map.png" alt="Ardhi University Map" onerror="this.parentElement.innerHTML='<span>🏛️ Ardhi University Map</span>'"></div>
-          <div class="map-details">
-            <h3>Ardhi University Campus Map</h3>
-            <p>Map showing Ardhi University (ARU) - Chuo cha Ardhi, Dar es Salaam, Tanzania.</p>
-            <div class="map-meta"><span class="map-type">🗺️ GIS - Campus Map</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
+            <h3>Land Cover Classification Map 2</h3>
+            <p>Detailed land cover classification results for Ubungo District.</p>
+            <div class="map-meta"><span class="map-type">🗺️ GIS - Land Cover</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
       </div>
@@ -610,44 +596,22 @@
         <h2>Remote Sensing Maps | Ramani za Picha za Anga</h2>
       </div>
       <div class="maps-grid">
-        <div class="map-card" onclick="openModal('NDVI.png', 'NDVI of Ubungo District - 2025')">
-          <div class="map-image"><img src="NDVI.png" alt="NDVI 2025 Map"></div>
+        <!-- Trend Analysis -->
+        <div class="map-card" onclick="openModal('trend.jpg', 'Trend Analysis - NDVI and Climate Variables')">
+          <div class="map-image"><img src="trend.jpg" alt="Trend Analysis"></div>
           <div class="map-details">
-            <h3>NDVI of Ubungo District - 2025</h3>
-            <p>Normalized Difference Vegetation Index showing vegetation health.</p>
-            <div class="map-meta"><span class="map-type">🛰️ RS - Vegetation Index</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
-          </div>
-        </div>
-        <div class="map-card" onclick="openModal('Land%20Surface%20Temperature%20(Lst).png', 'Land Surface Temperature 2000-2005 - Ubungo District')">
-          <div class="map-image"><img src="Land%20Surface%20Temperature%20(Lst).png" alt="Land Surface Temperature 2000-2005"></div>
-          <div class="map-details">
-            <h3>Land Surface Temperature 2000-2005</h3>
-            <p>Annual mean LST from MODIS showing urban heat island effect.</p>
-            <div class="map-meta"><span class="map-type">🛰️ RS - Thermal</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
-          </div>
-        </div>
-        <div class="map-card" onclick="openModal('Annual%20Air%20Temperature%20Maps.png', 'Annual Air Temperature 1995-2000 - Ubungo District')">
-          <div class="map-image"><img src="Annual%20Air%20Temperature%20Maps.png" alt="Annual Air Temperature 1995-2000"></div>
-          <div class="map-details">
-            <h3>Annual Air Temperature 1995-2000</h3>
-            <p>Annual mean air temperature from TerraClimate dataset.</p>
-            <div class="map-meta"><span class="map-type">🛰️ RS - Climate</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
-          </div>
-        </div>
-        <div class="map-card" onclick="openModal('Trend%20analysis%20between%20Rainfall%20and%20NDVI.jpg', 'Trend Analysis - NDVI and Land Surface Temperature')">
-          <div class="map-image"><img src="Trend%20analysis%20between%20Rainfall%20and%20NDVI.jpg" alt="Trend Analysis NDVI and LST"></div>
-          <div class="map-details">
-            <h3>Trend of NDVI and LST</h3>
-            <p>Time-series analysis showing NDVI and Land Surface Temperature trends.</p>
+            <h3>Trend Analysis Chart</h3>
+            <p>Time-series analysis showing NDVI, rainfall, and temperature trends.</p>
             <div class="map-meta"><span class="map-type">🛰️ RS - Analysis</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('Rainfall%20Trend%20Analysis%20(2000%E2%80%932024).jpg', 'Rainfall Trend Analysis - Ubungo District (2000-2024)')">
-          <div class="map-image"><img src="Rainfall%20Trend%20Analysis%20(2000%E2%80%932024).jpg" alt="Rainfall Trend Analysis"></div>
+        <!-- Change Detection -->
+        <div class="map-card" onclick="openModal('change.png', 'Change Detection Map - Ubungo District')">
+          <div class="map-image"><img src="change.png" alt="Change Detection Map"></div>
           <div class="map-details">
-            <h3>Rainfall Trend Analysis (2000-2024)</h3>
-            <p>Annual rainfall trend with linear regression showing 13.90 mm/year increase.</p>
-            <div class="map-meta"><span class="map-type">🛰️ RS - Climate</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
+            <h3>Change Detection Map</h3>
+            <p>Land cover change detection showing urban expansion between time periods.</p>
+            <div class="map-meta"><span class="map-type">🛰️ RS - Change Detection</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
       </div>
@@ -660,27 +624,30 @@
         <h2>Topography & Terrain Maps | Ramani za Topografia na Ardhi</h2>
       </div>
       <div class="maps-grid">
-        <div class="map-card" onclick="openModal('Hillshade%20Map.png', 'Hillshade Map of Ubungo District')">
-          <div class="map-image"><img src="Hillshade%20Map.png" alt="Hillshade Map"></div>
+        <!-- Hillshade PNG -->
+        <div class="map-card" onclick="openModal('hillshade.png', 'Hillshade Map - Ubungo District')">
+          <div class="map-image"><img src="hillshade.png" alt="Hillshade Map"></div>
           <div class="map-details">
-            <h3>Hillshade Map of Ubungo District</h3>
+            <h3>Hillshade Map (PNG)</h3>
             <p>Shaded relief showing valley systems and drainage patterns.</p>
             <div class="map-meta"><span class="map-type">⛰️ Terrain</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('Aspect%20Map.png', 'Aspect Map of Ubungo District')">
-          <div class="map-image"><img src="Aspect%20Map.png" alt="Aspect Map"></div>
+        <!-- Hillshade JPG -->
+        <div class="map-card" onclick="openModal('hillshade.jpg', 'Hillshade Map - Ubungo District')">
+          <div class="map-image"><img src="hillshade.jpg" alt="Hillshade Map JPG"></div>
           <div class="map-details">
-            <h3>Aspect Map of Ubungo District</h3>
-            <p>Slope direction (0° to 358°) showing drainage convergence.</p>
+            <h3>Hillshade Map (JPG)</h3>
+            <p>Shaded relief and terrain analysis of Ubungo District.</p>
             <div class="map-meta"><span class="map-type">⛰️ Terrain</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('Slope%20Map.jpg', 'Slope Map of Ubungo District')">
-          <div class="map-image"><img src="Slope%20Map.jpg" alt="Slope Map"></div>
+        <!-- Aspect Map -->
+        <div class="map-card" onclick="openModal('aspect.png', 'Aspect Map - Ubungo District')">
+          <div class="map-image"><img src="aspect.png" alt="Aspect Map"></div>
           <div class="map-details">
-            <h3>Slope Map of Ubungo District</h3>
-            <p>Steepness in degrees (0° to 24°).</p>
+            <h3>Aspect Map</h3>
+            <p>Slope direction (0° to 358°) showing drainage convergence patterns.</p>
             <div class="map-meta"><span class="map-type">⛰️ Terrain</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
@@ -717,50 +684,45 @@
         </div>
       </div>
       
-      <div class="maps-header" style="border-bottom: none; margin-bottom: 0.5rem; padding-bottom: 0;">
+      <div class="maps-header" style="border-bottom: none; margin-bottom: 0.8rem; padding-bottom: 0;">
         <div class="category-icon">📸</div>
         <h3 style="font-size: 1.2rem;">Photogrammetry Outputs</h3>
       </div>
       <div class="maps-grid">
-        <div class="map-card" onclick="openModal('DEM.png', 'Digital Elevation Model (DEM) - Ubungo District')">
-          <div class="map-image"><img src="DEM.png" alt="Digital Elevation Model"></div>
+        <!-- DEM -->
+        <div class="map-card" onclick="openModal('dem.png', 'Digital Elevation Model (DEM) - Ubungo District')">
+          <div class="map-image"><img src="dem.png" alt="Digital Elevation Model"></div>
           <div class="map-details">
             <h3>Digital Elevation Model (DEM)</h3>
             <p>Elevation model showing terrain heights from 63m to 139m above sea level.</p>
             <div class="map-meta"><span class="map-type">📷 Photogrammetry - DEM</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('DSM.png', 'Digital Surface Model (DSM) - Ubungo District')">
-          <div class="map-image"><img src="DSM.png" alt="Digital Surface Model"></div>
+        <!-- DSM -->
+        <div class="map-card" onclick="openModal('dsm.png', 'Digital Surface Model (DSM) - Ubungo District')">
+          <div class="map-image"><img src="dsm.png" alt="Digital Surface Model"></div>
           <div class="map-details">
             <h3>Digital Surface Model (DSM)</h3>
-            <p>Surface model showing elevation range from 64m to 139m including features on the surface.</p>
+            <p>Surface model showing elevation range including features on the surface.</p>
             <div class="map-meta"><span class="map-type">📷 Photogrammetry - DSM</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
+        <!-- Orthomosaic -->
         <div class="map-card" onclick="openModal('orthomosaic.png', 'Orthomosaic Map - Ubungo District')">
-          <div class="map-image"><img src="orthomosaic.png" alt="Orthomosaic Map" onerror="this.parentElement.innerHTML='<span>🖼️ Orthomosaic</span>'"></div>
+          <div class="map-image"><img src="orthomosaic.png" alt="Orthomosaic Map"></div>
           <div class="map-details">
             <h3>Orthomosaic Map</h3>
             <p>High-resolution orthorectified aerial imagery mosaic of the study area.</p>
             <div class="map-meta"><span class="map-type">📷 Photogrammetry - Orthomosaic</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
           </div>
         </div>
-        <div class="map-card" onclick="openModal('contour.png', 'Contour Map - Ubungo District')">
-          <div class="map-image"><img src="contour.png" alt="Contour Map" onerror="this.parentElement.innerHTML='<span>🗺️ Contour Lines</span>'"></div>
-          <div class="map-details">
-            <h3>Contour Map</h3>
-            <p>Topographic contour lines showing elevation changes across the district.</p>
-            <div class="map-meta"><span class="map-type">📷 Photogrammetry - Contour</span><span class="zoom-hint">🔍 Bonyeza kuzoom</span></div>
-          </div>
-        </div>
       </div>
       
-      <div class="maps-header" style="border-bottom: none; margin-bottom: 0.5rem; padding-bottom: 0; margin-top: 1rem;">
+      <div class="maps-header" style="border-bottom: none; margin-bottom: 0.8rem; padding-bottom: 0; margin-top: 1rem;">
         <div class="category-icon">🚁</div>
         <h3 style="font-size: 1.2rem;">Project Examples</h3>
       </div>
-      <div class="maps-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+      <div class="maps-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
         <div class="map-card">
           <div class="map-image"><span>🏞️ Orthophoto</span></div>
           <div class="map-details"><h3>Farmland 3D Model</h3><p>210 drone images over 22 hectares. High-resolution orthomosaic and DSM.</p><div class="map-meta"><span class="map-type">DJI Phantom 4</span></div></div>
@@ -776,7 +738,7 @@
       </div>
     </div>
 
-    <!-- CONTACT SECTION - updated with new contact info -->
+    <!-- CONTACT SECTION -->
     <div class="contact-portfolio-container">
       <button class="contact-portfolio-btn" onclick="togglePortfolioContact()">📞 Contact / Mawasiliano</button>
       <div id="portfolioContactInfo" class="contact-info-portfolio">
@@ -790,7 +752,7 @@
       </div>
     </div>
 
-    <!-- BACK TO HOME BUTTON - mwishoni kabisa -->
+    <!-- BACK TO HOME BUTTON -->
     <div class="back-to-home">
       <button class="home-btn" onclick="scrollToWelcome()">🏠 Back to Home</button>
     </div>
@@ -819,7 +781,6 @@
 </div>
 
 <script>
-  // Zoom functionality variables
   let currentZoom = 1;
   let currentImg = null;
   let panX = 0, panY = 0;
@@ -916,7 +877,6 @@
     if (event.target === document.getElementById('imageModal')) { closeModal(); }
   }
   
-  // Scroll to welcome page (back to home)
   function scrollToWelcome() {
     document.getElementById('welcomePage').scrollIntoView({ behavior: 'smooth' });
   }
